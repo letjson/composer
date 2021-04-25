@@ -1,10 +1,12 @@
 <?php
 
+namespace letjson;
+
 /**
  * @param string $url
  * @return mixed
  */
-function letJson(string $url)
+function letJson($url)
 {
     $file = file_get_contents($url, true);
 //    $json = json_decode($file, true);
@@ -21,7 +23,7 @@ class LetJson
     /** @var array|mixed */
     public $json = [];
 
-    function __construct(string $url)
+    function __construct($url)
     {
         $this->json = letJson($url);
     }
