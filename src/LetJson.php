@@ -1,7 +1,5 @@
 <?php
 
-
-# Here is an example on how to use the library and create a customer with desired properties:
 /**
  * @param string $url
  * @return mixed
@@ -13,6 +11,7 @@ function letJson(string $url)
     $json = json_decode($file, false);
     return $json;
 }
+
 
 /**
  * Class LetJson
